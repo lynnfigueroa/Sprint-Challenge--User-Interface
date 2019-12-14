@@ -91,7 +91,6 @@ nav {
     vertical-align: baseline;
     flex-direction: row;
     width: 80%;
-    background: white;
     animation-name: colorChange;
     animation-duration: 4s;
 }
