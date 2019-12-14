@@ -71,6 +71,46 @@ p {
     margin: 0 auto;
 }
 
+header{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 3% 0;
+}
+
+@keyframes colorChange{
+    from{ background-image: linear-gradient(red, yellow);}
+    to {background-image: linear-gradient(yellow, white);}
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3%;
+    vertical-align: baseline;
+    flex-direction: row;
+    width: 80%;
+    background: white;
+    animation-name: colorChange;
+    animation-duration: 4s;
+}
+
+nav a{
+    color: black;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: red;
+    text-decoration: underline;
+    transform: scale(1.5,1.5);
+}
+
+.topImg{
+    margin-bottom: 3%;
+}
+
 .top-content {
     display: flex;
     flex-wrap: wrap;
@@ -82,7 +122,8 @@ p {
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
-    padding-bottom: 20px;  
+    padding-bottom: 20px;
+
 }
 
 .middle-content {
@@ -110,6 +151,46 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.boxes .box:first-child{
+    background: teal;
+}
+
+.boxes .box:nth-child(2){
+    background: gold;
+}
+
+.boxes .box:nth-child(3){
+    background: cadetblue;
+}
+
+.boxes .box:nth-child(4){
+    background: coral;
+}
+
+.boxes .box:nth-child(5){
+    background: crimson;
+}
+
+.boxes .box:nth-child(6){
+    background: forestgreen;
+}
+
+.boxes .box:nth-child(7){
+    background: darkorchid;
+}
+
+.boxes .box:nth-child(8){
+    background: hotpink;
+}
+
+.boxes .box:nth-child(9){
+    background: indigo;
+}
+
+.boxes .box:nth-child(10){
+    background: dodgerblue;
 }
 
 .bottom-content {
@@ -143,4 +224,109 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+.aboutTop{
+    margin: 2%;
+    padding-bottom: 3%;
+    border-bottom: 1px dashed black;
+}
+
+.aboutBoxes{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2%;
+}
+
+.aboutContent{
+    width: 46%;
+    margin: 2%;
+    padding-bottom: 4%;
+    border-bottom: 1px dashed black;
+}
+
+.aboutContent img{
+    margin-bottom: 2%;
+}
+
+.aboutContent button{
+    border: 2px solid black;
+    border-radius: 30px;
+    background: white;
+    width: 50%;
+    height: 10%;
+}
+
+.aboutContent p{
+    padding: 2% 0;
+}
+
+.aboutTogether{
+    padding: 2%;
+    margin-left: 2%;
+}
+
+input[type=text], select, textarea{
+    width: 100%;
+    padding: 2%;
+    border: 1px solid gray;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 2%;
+    margin-bottom: 4%;
+    resize: vertical;
+}
+
+input[type=submit]{
+    border: 1px solid black;
+    background: white;
+    width: 15%;
+}
+
+input[type=submit]:hover{
+    background: gray;
+}
+
+.contactImg{
+    text-align: center;
+    border: 2px solid black;
+    background: lightgray;
+    margin-bottom: 3%;
+}
+
+.contactContent{
+    border-bottom: 1px dashed black;
+    padding-bottom: 2%;
+}
+
+.contactForm{
+    padding-top: 3%;
+}
+
+.productsTop{
+    padding: 3% 0;
+}
+.productBox{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.productContent{
+    width: 45%;
+    border: 1px solid black;
+    background: lightgray;
+    margin: 2%;
+    padding: 2%;
+}
+
+.productContent p{
+    padding-bottom: 2%;
+}
+
+@media only screen and (min-width: 480px){
+    .productBox{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
 }
